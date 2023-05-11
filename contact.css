@@ -5,6 +5,11 @@
 	margin: 0;
 }
 
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
 h1
 {
 	font-size: 40px;
@@ -16,8 +21,7 @@ header
 	display: flex;
 	align-items: center;
 	justify-content:center;
-	background: linear-gradient(to right,#414359,#5c5757);
-	/*background: #9e9e9e;*/
+	background: #9e9e9e;
 	height: 100px;
 	width: 100%;
 }
@@ -56,8 +60,299 @@ header
 
 .heading p
 {
-	font-family: 'marck Script';
+	font-family: 'Sacramento', cursive;
+	font-size: 40px;
+}
+
+.form
+{
+	display:flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	width: 100%;
+	height: 750px;
+	background-image: url("./form.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.form .heading
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+form
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	border: 1px solid #00000080;
+	border-radius: 10px;
+	width: 500px;
+	height: 480px;
+	backdrop-filter: blur(5px);
+	box-shadow: 5px 5px 5px 5px #00000080;
+}
+
+.sect
+{
+	border: 1px solid #00000080;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #fefefe;
+	width: 450px;
+}
+
+.sect label
+{
 	font-size: 20px;
+}
+
+.sect input
+{
+	border: none;
+	border-bottom: 2px solid #00000080;
+	font-family: 'Coming Soon';
+	padding-top: 10px;
+	outline: none;
+	width: 400px;
+	font-size: 15px;
+}
+
+textarea
+{
+	border: none;
+	border-bottom: 2px solid #00000080;
+	font-family: 'Coming Soon';
+	padding-top: 10px;
+	outline: none;
+	width: 400px;
+	font-size: 15px;
+}
+
+.btn button
+{
+	background-color: #161d30;
+	width: 120px;
+	height: 60px;
+	border-radius: 30px;
+	cursor: pointer;
+	border: none;
+	padding: 5px;
+	color: #fefefe;
+	font-size: 20px;
+}
+
+.btn button:hover
+{
+	background-color: #1e273f;
+}
+
+.add-info
+{
+	padding: 20px 0;
+	width: 100%;
+	height: 1400px;
+	background-color: #c5c1c9;
+	color: #260372;
+}
+
+.add-info h1
+{
+	padding: 20px;
+}
+
+.faq
+{
+	padding: 20px 0;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+}
+
+.faq h2
+{
+	align-self: center;
+	justify-content: center;
+}
+
+.qa
+{	
+	width: 100%;
+	background-color: #e0d7d7;
+	border: 1px solid black;
+}
+
+.questions
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.questions button
+{
+	background-color: inherit;
+	border: none;
+}
+
+.questions button i
+{
+	font-size: 20px;
+	color: #260372;
+	cursor: pointer;
+}
+
+.answer
+{
+	display: none;
+}
+
+.answer p a
+{
+	color: #260372;
+}
+
+.show
+{
+	display: flex;
+}
+
+.policy
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.policy p
+{
+	text-indent: 40px;
+}
+
+.policy a
+{
+	color: #260372;
+}
+
+.terms
+{
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+	justify-content: center;
+}
+
+.terms h2
+{
+	align-self: center;
+	justify-content: center;
+}
+
+.conditions
+{
+	padding: 10px 0;
+}
+
+.conditions p
+{
+	text-indent: 40px;
+}
+
+.contact
+{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.contact p
+{
+	text-indent: 10px;
+}
+
+.redirect-container
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 9999;
+	backdrop-filter: blur(5px);
+
+}
+
+.redirect
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid #00000080;
+	border-radius: 10px;
+	width: 500px;
+	height: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	box-shadow: 5px 5px 5px 5px #00000080;
+	background-color: #9c9dac;
+}
+
+.redirect i
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: black;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.redirect h2
+{
+	padding-top: 60px;
+}
+
+.redirect button
+{
+	background-color: #353646;
+	width: 200px;
+	height: 70px;
+	border-radius: 30px;
+	cursor: pointer;
+	border: none;
+	padding: 5px;
+}
+
+.redirect button a
+{
+	text-decoration: none;
+	color: #fefefe;
+	font-size: 20px;
+
+}
+
+.redirect button:hover
+{
+	background-color: #43444d;
 }
 
 footer
@@ -82,7 +377,6 @@ footer
 	align-items: center;
 	justify-content: space-evenly;
 	width: 100%;
-	padding: 20px 0;
 }
 
 .social a
@@ -94,5 +388,4 @@ footer
 .copy
 {
 	font-size: 20px;
-	padding-bottom: 10px;
 }

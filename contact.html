@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Sacramento&display=swap" rel="stylesheet">
     <title>Stadium ||Contact</title>
 </head>
 <header>
     <nav class="heading">
-        <p><b>Stadium</b></p>
+        <p><b>Stadium</b><i class="fas fa-cocktail"></i></p>
             <button><a href="./index.html">Home</a></button>
             <button><a href="./product.html">Shop</a></button>
             <button><a href="./contact.html">Get in Touch</a></button>
@@ -18,7 +19,214 @@
     </nav>
 </header>
 <body>
-    
+    <section class="form">
+        <div class="heading">
+            <h1>Have A Problem?</h1>
+            <h2>Our Team is here to assist you</h2>
+        </div>
+        <form>
+            <div class="sect">
+                <label for = "name">Full Name</label>
+                <br>
+                <input type="text" name="name" id ="name" placeholder="Example: John Doe" required= "true" >
+                <br>
+            </div>
+
+            <div class="sect">
+                <label for = "mail">Email</label>
+                <br>
+                <input type="email" name="mail" id ="mail" placeholder="example: johndoe@mail.com" required= "true" >
+                <br>
+            </div>
+
+            <div class="sect">
+                <label for = "subject">Subject</label>
+                <br>
+                <input type="text" name="subject" id ="subject" placeholder="Subject..">
+                <br>
+            </div>
+
+            <div class="sect">
+                <label for = "message">Message</label>
+                <br>
+                <textarea id ="message" placeholder="Write Message.." required= "true"></textarea>
+                <br>
+            </div>
+        </form>
+        <div class="btn">
+            <button type="submit" onclick="submit()">Submit</button>
+        </div>
+    </section>
+    <section class="add-info">
+        <h1><center>Additional Information</center></h1>
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="qa">
+                <div class="questions">
+                    <h3>What are the ingredients used in your soft drinks?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Our soft drinks are made with fresh and natural ingredients sourced directly from African farmers. Each flavor has a
+                    unique blend of fruits and spices that capture the authentic taste of Africa.</p>
+                </div>
+            </div>
+            <div class="qa">
+               <div class="questions">
+                    <h3>Where are your soft drinks made?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+               </div>
+               <div class="answer">
+                <p>Our soft drinks are made in our factory in Nigeria, where we combine traditional African recipes with modern manufacturing
+                techniques to produce high-quality and flavorful beverages.</p>
+               </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>Do you offer any sugar-free options?</h3>
+                    <button class="dropbtn"><i class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Yes, we offer a sugar-free version of our most popular flavor. It has the same great taste but without the added sugar</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>How are your soft drinks packaged?</h3>
+                    <button class="dropbtn"><i class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Our soft drinks are packaged in eco-friendly glass bottles that preserve the freshness and taste of our beverages. We also
+                    use recyclable materials for our packaging to minimize our impact on the environment.</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>Can I order your soft drinks online?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Yes, you can order our soft drinks directly from our website. We ship nationwide and offer free shipping for orders over 
+                    <strike>N</strike>20,000.</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>Do you offer any discounts for bulk orders?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Yes, we offer discounts for bulk orders. Please contact us for more information.</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>How long does it take for my order to arrive?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Orders typically take 3-5 business days to arrive. We'll provide you with a tracking number once your order has been shipped 
+                    so you can easily follow its progress.</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>What is your return policy?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>If you're not satisfied with your order, please contact us within 14 days of receiving it. We'll be happy to offer a refund or
+                        exchange as long as the product is returned in its original condition. For more clarity please refer to 
+                        <a href="#refund">Returns And Refunds</a></p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>Are your soft drinks available in stores?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>At the moment, our soft drinks are not available in stores. However, we are actively working on expanding our distribution channels
+                    and making our products more widely available to customers like you.</p>
+                </div>
+            </div>
+            <div class="qa">
+                <div class="questions">
+                    <h3>Can I become a distributor of your soft drinks?</h3>
+                    <button class="dropbtn"><i  class="fas fa-chevron-down" ></i></button>
+                </div>
+                <div class="answer">
+                    <p>Yes, we're always looking for new distribution partners. Please contact us to learn more about our distribution program and how to 
+                        become a distributor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="policy">
+            <h2>Privacy Policy</h2>
+            <p>Here at Stadium Limited, we understand that privacy is a fundamental right and we are committed to protecting your 
+                privacy in accordance with applicable laws and regulations.We believe that the responsible handling of personal information 
+                is essential to maintaining the trust of our customers, partners, and stakeholders. As such, we have implemented a 
+                comprehensive privacy policy that outlines the types of personal information we collect, how we use and share that information, 
+                and the measures we take to keep your information secure.. Please review our <a href="./policy.html">privacy policy</a> for more information.</p>
+        </div>
+        <div class="terms">
+            <h2>Terms And Conditions</h1>
+            <div class="conditions">
+                <h3>Orders And Payment</h3>
+                <p>All orders are subject to acceptance by the Company. Payment must be made in full at the time of ordering. We accept 
+                    payment by credit card, debit card,Payday, and PayPal</p>
+            </div>
+            <div class="conditions">
+                <h3>Shipping and delivery</h3>
+                <p>We aim to dispatch all orders within 48 hours of receipt, subject to availability. Delivery times may vary depending 
+                    on your location, and we cannot be held responsible for any delays caused by third-party delivery services</p>
+            </div>
+            <div class="conditions" id="refund">
+                <h3>Returns and Refunds</h3>
+                <p>If you are not satisfied with your purchase, please contact us within 14 days of receiving it. We will provide 
+                    instructions on how to return the product for a refund or exchange. Please note that we cannot accept returns on 
+                    products that have been opened or used, unless they are faulty or damaged.</p>
+            </div>
+            <div class="conditions">
+                <h3>Intellectual Property</h3>
+                <p>The content on our website, including but not limited to text, graphics, logos, images, and software, is the property 
+                    of the Company or its affiliates and is protected by intellectual property laws. You may not reproduce, distribute, or 
+                    modify any content on our website without our prior written consent.</p>
+            </div>
+            <div class="conditions">
+                <h3>Disclaimer of Warranties</h3>
+                <p>We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, 
+                    suitability, or availability with respect to the website or the information, products, services, or related graphics 
+                    contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+            </div>
+            <div class="conditions">
+                <h3>Limitation of Liability</h3>
+                <p>In no event shall the Company or its affiliates be liable for any direct, indirect, incidental, special, or consequential damages 
+                    arising out of or in any way connected with the use of our products or services.</p>
+            </div>
+            <div class="conditions">
+                <h3>Governing Law</h3>
+                <p>These terms and conditions shall be governed by and construed in accordance with the laws of the jurisdiction in which the Company 
+                    is located.</p>
+            </div>
+            <div class="conditions">
+                <h3>Changes to Terms and Conditions</h3>
+                <p>We reserve the right to modify these terms and conditions at any time without prior notice. Your continued use of our website and 
+                    products constitutes your acceptance of any changes to these terms and conditions.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <h3><u>Note:</u></h3>
+            <p>For our company's contact information, please refer to the footer of the website.</p>
+        </div>
+    </section>
+    <div class="redirect-container" id="redirect-container">
+        <div class="redirect">
+            <i class= "fas fa-times" onclick="cancel()"></i>
+            <h2>Thanks for submitting, we would get back to you as soon as possible :)</h2>
+            <button><a href="./index.html">Back to Home Page</a></button>
+        </div>
+    </div>
 </body>
 <footer>
     <div class="social">
@@ -35,4 +243,5 @@
     </div>
 </footer>
 <script src="https://kit.fontawesome.com/6020c7ae09.js" crossorigin="anonymous"></script>
+<script src="./contact.js"></script>
 </html>

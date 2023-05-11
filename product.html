@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Sacramento&display=swap" rel="stylesheet">
     <title>Stadium || Product</title>
 </head>
 <header>
     <nav class="heading">
-        <p><b>Stadium</b></p>
+        <p><b>Stadium</b><i class="fas fa-cocktail"></i></p>
             <button><a href="./index.html">Home</a></button>
             <button><a href="./product.html">Shop</a></button>
             <button><a href="./contact.html">Get in Touch</a></button>
@@ -18,7 +19,183 @@
     </nav>
 </header>
 <body>
+    <section class="hero-pro">
+        <div class="hero-pro-text">
+            <p><b>Enjoy every sip with the people you love</b></p>
+        </div>
+        <div class="pro-CTA">
+            <button onclick="call()">Get a free sample now!!</button>
+        </div>
+    </section>
+    <section class="products-container">
+        <h1>Browse Through Our Collection</h1>
+        <div class="products">
+            <div class="product">
+                <img src="./green_limeade.jpeg" alt="Green Limeade" onclick="detail()">
+                <h2><center>Green Limeade</center></h2>
+            </div>
+            <div class="product">
+                <img src="./blue_lagoon.jpeg" alt="Blue Lagoon">
+                <h2><center>Blue Lagoon</center></h2>
+            </div>
+            <div class="product">
+                <img src="./oranjola.jpeg" alt="Oranjola">
+                <h2><center>Oranjola</center></h2>
+            </div>
+            <div class="product">
+                <img src="./crimson_crush.jpeg" alt="Crimson Crush">
+                <h2><center>Crimson Crush</center></h2>
+            </div>
+            <div class="product">
+                <img src="./lemonberry_fizz.jpeg" alt="Lemonberry Fizz">
+                <h2><center>Lemonberry Fizz</center></h2>
+            </div>
+            <div class="product">
+                <img src="./lemonade_spritzer.jpeg" alt="Lemonade Spritzer">
+                <h2><center>Lemonade Spritzer</center></h2>
+            </div>
+            <div class="product">
+                <img src="./floral_fizz.jpeg" alt="Floral Fizz">
+                <h2><center>Floral Fizz</center></h2>
+            </div>
+            <div class="product">
+                <img src="./rosé_lemonade.jpeg" alt="Rosé Lemonade">
+                <h2><center>Rosé Lemonade</center></h2>
+            </div>
+            <div class="product">
+                <img src="./citrus_chill.jpeg" alt="Citrus Chill">
+                <h2><center>Citrus Chill</center></h2>
+            </div>
+            <div class="product">
+                <img src="./purple_passion.jpeg" alt="Purple Passion">
+                <h2><center>Purple Passion</center></h2>
+            </div>
+            <div class="product">
+                <img src="./sweet_rouge.jpeg" alt="Sweet Rouge">
+                <h2><center>Sweet Rouge</center></h2>
+            </div>
+            <div class="product">
+                <img src="./sunset_swirl.jpeg" alt="Sunset Swirl">
+                <h2><center>Sunset Swirl</center></h2>
+            </div>
+        </div>
+    </section>
+    <div class="details-container" id="details-container">
+        <div class="details">
+            <div class="expand">
+                <img src="./green_limeade.jpeg" alt="Green Limeade">
+                <h1 class="drink_name"><center>Green Limeade</center></h1>
+                <p class="price"><strike>N</strike>5000</p>
+            </div>
+            <div class="info">
+                <h3 class="writeup">
+                    Indulge in the refreshing taste of Green Limeade made from a blend of freshly squeezed lime,mint leaves, and ginger 
+                    root for a zesty kick. Infused with the goondness of baoba fruit powder, it is rich in antioxidants and vitamin C,
+                    with just the right amount of honey, making it the perfect drink to quench your thirst
+                </h3>
+            </div>
+            <div class="btns">
+                <button class="sample" onclick="det_call()">Get Your Free Sample Now!!</button>
+                <button class="continue" onclick="det_cancel()">Keep Viewing Our Products</button>
+            </div>
+        </div>
+        <div class="det-CTA">
+            <i class="fas fa-times" onclick="det_call_cancel()"></i>
+            <div class="heading">
+                <h2>Get A Free Sample Of Your Desired Drink</h2>
+            </div>
+            <form>
+                <div class="sample_form">
+                    <label for = "name">Full Name</label>
+                    <input type="text" name="name" id ="name" placeholder="Example: John Doe" required= "true" >
+                    <br>
+                </div>
     
+                <div class="sample_form">
+                    <label for = "mail">Email</label>
+                    <input type="email" name="mail" id ="mail" placeholder="example: johndoe@mail.com" required= "true" >
+                    <br>
+                </div>
+        
+                <div class="sample_form">
+                    <label for = "drink">Select Drink</label>
+                    <select name="Select Drink" >
+                        <option value="Select..">Select Drink</option>
+                        <option value="BL">Blue Lagoon</option>
+                        <option value="CCl">Citrus Chill</option>
+                        <option value="CCr">Crimson Crush</option>
+                        <option value="FF">Floral Fizz</option>
+                        <option value="GL">Green Limeade</option>
+                        <option value="LS">Lemonade Spritzer</option>
+                        <option value="LF">Lemonberry Fizz</option>
+                        <option value="OR">Oranjola</option>
+                        <option value="PP">Purple Passion</option>
+                        <option value="RL">Rosé Lemonade</option> 
+                        <option value="SS">Sunset Swirl</option>
+                        <option value="SW">Sweet Rouge</option>
+                    </select>
+                    <br>
+                </div>
+        
+                <div class="sample_form">
+                    <label for = "address">Address</label>
+                    <textarea id ="address" placeholder="Write Address.." required= "true"></textarea>
+                    <br>
+                </div>
+            </form>
+                <div class="btn">
+                    <button type="submit" onclick="submit()">Submit</button>
+                </div>
+        </div>
+    </div>
+    <div class="CTA">
+        <i class="fas fa-times" onclick="cancel()"></i>
+        <div class="heading">
+            <h2>Get A Free Sample Of Your Desired Drink</h2>
+        </div>
+        <form>
+            <div class="sample_form">
+                <label for = "name">Full Name</label>
+                <input type="text" name="name" id ="name" placeholder="Example: John Doe" required= "true" >
+                <br>
+            </div>
+
+            <div class="sample_form">
+                <label for = "mail">Email</label>
+                <input type="email" name="mail" id ="mail" placeholder="example: johndoe@mail.com" required= "true" >
+                <br>
+            </div>
+    
+            <div class="sample_form">
+                <label for = "drink">Select Drink</label>
+                <select name="Select Drink" >
+                    <option value="Select..">Select Drink</option>
+                    <option value="BL">Blue Lagoon</option>
+                    <option value="CCl">Citrus Chill</option>
+                    <option value="CCr">Crimson Crush</option>
+                    <option value="FF">Floral Fizz</option>
+                    <option value="GL">Green Limeade</option>
+                    <option value="LS">Lemonade Spritzer</option>
+                    <option value="LF">Lemonberry Fizz</option>
+                    <option value="OR">Oranjola</option>
+                    <option value="PP">Purple Passion</option>
+                    <option value="RL">Rosé Lemonade</option> 
+                    <option value="SS">Sunset Swirl</option>
+                    <option value="SW">Sweet Rouge</option>
+                </select>
+                <br>
+            </div>
+    
+            <div class="sample_form">
+                <label for = "address">Address</label>
+                <textarea id ="address" placeholder="Write Address.." required= "true"></textarea>
+                <br>
+            </div>
+        </form>
+            <div class="btn">
+                <button type="submit" onclick="submit()">Submit</button>
+            </div>
+    </div>
 </body>
 <footer>
     <div class="social">
@@ -34,5 +211,6 @@
         <p>&copyCopyright 2023 Stadium Limited</p>
     </div>
 </footer>
- <script src="https://kit.fontawesome.com/6020c7ae09.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6020c7ae09.js" crossorigin="anonymous"></script>
+<script src="./product.js"></script>
 </html>
