@@ -85,14 +85,14 @@ header
 	font-family: 'Caesar Dressing', cursive;
 }
 
-.CTA
+.index_CTA
 {
 	position: absolute;
 	right: 20px;
 	margin-top: 340px
 }
 
-.CTA button
+.index_CTA button
 {
 	background-color: #832c07;
 	color: #ffffff;
@@ -105,13 +105,13 @@ header
 	padding: 5px;
 }
 
-.CTA button a
+.index_CTA button a
 {
 	text-decoration: none;
 	color: #fefefe;
 }
 
-.CTA button:hover
+.index_CTA button:hover
 {
 	background-color: #b24d14;
 }
@@ -187,6 +187,8 @@ header
 	cursor: pointer;
 	border: none;
 	padding: 5px;
+	color: #fefefe;
+	font-size: 20px;
 
 }
 
@@ -260,6 +262,117 @@ header
 	font-size: 30px;
 	text-indent: 70px;
 	padding: 15px;
+}
+
+.CTA
+{
+	width: 300px;
+	height: 600px;
+	display: none;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-between;
+	border: 1px solid #00000008;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #00000008;
+	background-color: #9e9e9e;
+}
+
+.CTA i
+{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: black;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.CTA h2
+{
+	align-self: center;
+	justify-content: center;
+}
+
+.CTA form
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 200px;
+}
+
+.CTA .sample_form
+{
+	border: 1px solid #00000080;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #fefefe;
+	width: 250px;
+	height: 150px;
+}
+
+.CTA .sample_form label
+{
+	font-size: 20px;
+}
+
+.CTA .sample_form input
+{
+	border: none;
+	border-bottom: 2px solid #00000080;
+	font-family: 'Coming Soon';
+	padding-top: 10px;
+	outline: none;
+	width: 200px;
+	font-size: 15px;
+} 
+
+.CTA .sample_form select
+{
+	outline: none;
+}
+
+.CTA .sample_form textarea
+{
+	border: none;
+	border-bottom: 2px solid #00000080;
+	font-family: 'Coming Soon';
+	padding-top: 10px;
+	outline: none;
+	width: 200px;
+	font-size: 15px;
+}
+.CTA .btn
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.CTA button
+{
+	background-color: #353646;
+	width: 120px;
+	height: 50px;
+	border-radius: 30px;
+	cursor: pointer;
+	border: none;
+	padding: 5px;
+	color: #fefefe;
+	font-size: 20px;
+}
+
+.CTA button:hover
+{
+	background-color: #43444d;
 }
 
 /*1a0051 4a4e69 31037c*/

@@ -23,15 +23,17 @@
             <div class="hero-text">
                 <p><b>Sip the flavours of Africa, with love in every glass</b></p>
             </div>
-            <div class="CTA">
-                <button><a href="./product.html/.CTA"></a>Try It For Free</a></button>
+            <div class="index_CTA">
+                <button onclick="call()">Try It For Free</button>
             </div>
         </section>
         <section class="product">
             <h1><center>Popular Deals</center></h1>
             <div class="pro-container">
                 <div class="products">
-                    <img class= "pro" src="./green_limeade.jpeg" alt="Green Limeade">
+                    <a href="./product.html" target="_blank">
+                        <img class= "pro" src="./green_limeade.jpeg" alt="Green Limeade">
+                    </a>
                     <div class="text">
                         <p><center>Green Limeade</center></p>
                         <p><center><strike>N</strike>5,000</center></p>
@@ -53,8 +55,8 @@
                 </div>
             </div>
             <div class="btn">
-                <button><a href="#CTA">Get Your Sample</a></button>
-                <button><a href="./product.html">See More</a></button>
+                <button onclick="call()">Get Your Sample</button>
+                <button><a href="./product.html#details-container">See More</a></button>
             </div>
         </section>
         <section class="values">
@@ -103,6 +105,54 @@
                 </p>
             </div>
         </section>
+        <div class="CTA">
+            <i class="fas fa-times" onclick="cancel()"></i>
+            <div class="heading">
+                <h2>Get A Free Sample Of Your Desired Drink</h2>
+            </div>
+            <form>
+                <div class="sample_form">
+                    <label for = "name">Full Name</label>
+                    <input type="text" name="name" id ="name" placeholder="Example: John Doe" required= "true" >
+                    <br>
+                </div>
+    
+                <div class="sample_form">
+                    <label for = "mail">Email</label>
+                    <input type="email" name="mail" id ="mail" placeholder="example: johndoe@mail.com" required= "true" >
+                    <br>
+                </div>
+        
+                <div class="sample_form">
+                    <label for = "drink">Select Drink</label>
+                    <select name="Select Drink" >
+                        <option value="Select..">Select Drink</option>
+                        <option value="BL">Blue Lagoon</option>
+                        <option value="CCl">Citrus Chill</option>
+                        <option value="CCr">Crimson Crush</option>
+                        <option value="FF">Floral Fizz</option>
+                        <option value="GL">Green Limeade</option>
+                        <option value="LS">Lemonade Spritzer</option>
+                        <option value="LF">Lemonberry Fizz</option>
+                        <option value="OR">Oranjola</option>
+                        <option value="PP">Purple Passion</option>
+                        <option value="RL">Rosé Lemonade</option> 
+                        <option value="SS">Sunset Swirl</option>
+                        <option value="SW">Sweet Rouge</option>
+                    </select>
+                    <br>
+                </div>
+        
+                <div class="sample_form">
+                    <label for = "address">Address</label>
+                    <textarea id ="address" placeholder="Write Address.." required= "true"></textarea>
+                    <br>
+                </div>
+            </form>
+                <div class="btn">
+                    <button type="submit" onclick="submit()">Submit</button>
+                </div>
+        </div>
     </body>
     <footer>
         <div class="social">
